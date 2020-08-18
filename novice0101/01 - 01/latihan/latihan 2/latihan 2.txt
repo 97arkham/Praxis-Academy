@@ -1,0 +1,78 @@
+expresion dan stetmen
+pada javascript sangat rawan dengan titik koma ada suatau kejadian dimana tidak memerlukan titik koma dan ada yang harus menggunakan titik koma maka 
+lebih waspada.
+
+binding
+sebuah program  yang tidak untuk mengubah nilai lama dari nilai baru biasanya bind digunakan untuk function di dlaam function jadi agar dapat mengambil function pertama harus bind dahulu.
+
+contoh
+
+var angka1 = 5;
+angka1 = angka1 - 2;
+console.log(angka1);
+
+output -> 3
+
+jadi binding akan mengikat angka yang pertama yang terdapat dalam var agar tidak berubah.
+
+nama binding
+contoh:
+budisantoso valid
+22budi tidak valid nama tidak boleh deimulai dengan digit
+agar dapat valid maka dapat dibiding dengan (_) atau (&) _22budi
+
+the environment
+kumpulan binding dan nilainya yang ada pada waktu tertentu.
+contoh
+browser saat kita membuka website yang dimuat dan sekalian membaca input mouse dan keyboard.
+
+fungsi
+contoh fungsi:
+prompt("masukan nama: ")
+prompt adalah fungsi ntuk menmpung data nama.
+menjalankan fungsi adalah memanggil jadi tinggal console.log(prompt);
+
+fungsi console.log
+akan mengeluarkan hal yang ingin kita keluarkan.
+
+retrun nilai
+mengembalikan sebuah nilai
+console.log(Math.min(2,4)+ 100);
+102
+karena nilai minimal 2 ditambah 100 menjadi 102.
+
+control flow
+program memiliki lebih dari satu pernyataan jadi ketika di keluarkan akan seperti sebuah kalimat.
+let  theNumber  =  Number ( prompt ( "Pilih nomor" ));
+console.log ( "  Bilangan Anda adalah akar kuadrat dari" + 
+            theNumber  *  theNumber );
+
+eksekusi bersyarat
+biasanya menggunakan if else
+
+looping
+menyerderhanakan sebuah perulangan dengan beberapa baris biasanya menggunakan perintah for atau while.
+
+kode indentasi
+biasanya tab atau spasi yang penting setiap blok baru menambahkan jumlah ruang yang sama.
+
+
+Breaking Out of a Loop
+dengan menggunakan opperator %  sisa jika terdapat sisa maka akan keluar 1 dan jika sisa 0 maka nol.
+
+jadi break digunakan untuk pernyataan apakah angka akan habis dibagi nilai yang dipilih.
+
+Mengirimkan nilai dengan sakelar
+biasanya menggunakan switch case
+Program akan mulai mengeksekusi di label yang sesuai dengan nilai yang switchdiberikan, atau defaultjika tidak ada nilai yang cocok ditemukan. Ini akan terus dijalankan, bahkan di label lain, hingga mencapai breakpernyataan.
+
+kapitalisasi
+penggunakan nama atau penamaan dengan nama besar
+contoh
+fuzzylittleturtle
+fuzzy_little_turtle
+FuzzyLittleTurtle
+fuzzyLittleTurtle
+
+Komentar
+kode saat pengembangan menggunakan komentar agar dapat dikembangkan dan tidak bingung sebagai user lain yang akan mengembangkan dan memberikan keterangan.

@@ -1,0 +1,10 @@
+PS C:\Windows\system32> New-Item -Path 'E:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Guru99' -ItemType
+Directory
+
+
+    Directory: E:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----        16/08/2020      6:12            Guru99

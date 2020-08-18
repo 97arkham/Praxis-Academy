@@ -1,0 +1,21 @@
+cls = membersihan layar cmd
+cmd = membuka cmd baru
+chcp = menampilkan jumlah halaman kode yang aktif "Active code page: 850"
+cd = menampilkan nama folder (direktori) atau mengubah lokasi / posisi direktori
+"c:\windows\system32" cd..  "c:\windows"
+bcdedit = mengelola data konfigurasi boot 
+md = membuat folder
+copy con  cmdline.txt = membuat file
+dir = melihat folder
+break = Kombinasi tombol CTRL+C tidak dapat digunakan untuk menghentikan proses MS-DOS
+cprofile = Membersihkan profil yang ditentukan dari ruang yang terbuang dan menonaktifkan asosiasi file pengguna tertentu
+copy = enyalin file dari suatu lokasi (direktori) ke lokasi lain
+color = mengganti warna tulisan di Command Prompt
+convert = Mengubah partisi berjenis FAT menjadi NTFS
+date = Melihat dan mengganti tanggal
+del = Menghapus file dan memasukkan ke recycle bin
+defrag = Melakukan defragmentation
+deltree = Menghapus file secara permanen (tidak masuk ke dalam recycle bin)
+dsadd = Menambahkan objek ke direktori aktif
+erase = Menghapus satu atau lebih file
+exit = Keluar dari baris perintah (Keluar dari skrip batch saat ini)

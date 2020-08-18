@@ -1,0 +1,163 @@
+di dalam komputer hanya ada sebuah data, kita dpat membaca data, mengubah data,dan membuat data baru
+data-data ini disimpan dalam urutan bit, bit adalah segala sesuatu yang bernilai dua biasanya disebut nol atau satu.
+nilai benar atau salah.
+
+contoh: bit dari 13 adalah 0 0 0 0 1 1 0 1 angka 0 dan 1 adalah bilangan biner jika di hitung biasa
+0 = 2^7 = 128 = salah
+0 = 2^6 = 64 = salah
+0 = 2^5 = 32 = salah
+0 = 2^4 = 16 = salah
+1 = 2^3 = 8 = benar
+1 = 2^2 = 4 = benar
+0 = 2^1 = 2 = salah
+1 = 2^0 = 1 = benar
+8 bit di hitung dari 0 bukan 1 jadi 0 1 2 3 4 5 6 7 bukan 1 2 3 4 5 6 7 8
+ambil angka yang benar yaitu 1 jadi 1+4+8 = 13.
+
+-Values
+komputer masa kni memiliki lebih dari 30 miliar bit dalam penyimpanan kerja.
+tetapi penyimpanan external seprti harddisk dansebagainya biasanya lebih besar.
+agar dapat memperingkas pekerjaan dan bekerja dengan jumlah bit seperti itu tanpa tersesat 
+maka harus memisahkan informasi, dalan java script disebut value, meskipun semua value terbuat dari bit
+tetapi memiliki peran yang berbeda-beda ada valeu angka, value text, dan value fungsi, dan lainnya.
+untuk membuat sebuah value kita hanya perlu memanggil namanya.
+
+contoh pada index.html msukan
+
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<input type="text" id="nama" />
+ 
+<button type="button" onclick="cetak()">Cetak</button>
+ 
+<p id="demo"></p>
+ 
+ 
+</body>
+</html>
+
+lalu di main.js masukan :
+
+function cetak() {
+    var nama = document.getElementById("nama").value ;
+    document.getElementById("demo").innerHTML = "<b>" + nama +"</b>";
+}
+
+kode di atas value sebuah fungsi dengan nama cetak dan di panggil pada html 
+"onclick="cetak()".
+
+dengan adanya value ini akan mempermudah pengembang selanjutnya untuk mengembangkan kode kita.
+
+-Number
+angka pada java script langsung di tulis angkanya tidak perlu menggunakan petik.
+contoh
+var angka1 = 2;
+jika menggunakan koma gunakan ( . ) titik.
+contoh var angka1 = 1.23;
+
+-aritmathic(perhitungan)
+pada aritmatika ini kita akan menjumlahkan, pengurangan, pembagian, perkalian, dan lain sebagainya antara number dengan number.
+contoh:
+3 + 5 * 5
+untuk (+ dan *) itu adalah oprasi aritmatika.
+
+-spesial number
+
+ada tiga khusus nilai pada java script dua yang pertama yaitu INFINITY dan -INFINITY.
+yaitu nilai positif dan negatif, lalu nilai khusus yang ke tiga yaitu NAN "bukan angka",
+dengan adanya nan ini kita akanmendapatkan hasil seperti 0 dibagi 0 atau nfinity - infinity, atau oprasi menarik
+yang tidak memberikan hasil yang berarti.
+
+-string
+string adalah type data untuk text berbeda dengan number type data string harus menggunakan petik entah itu petik satu atau petik dua atau petik belakang.
+contoh:
+"hello world!"
+'hello world!'
+`hello world!`
+
+(\n) akan membantu kita dalam membuat baris baru dalam satu string
+contoh:
+"Ini baris pertama \ nDan ini baris kedua"
+Teks sebenarnya yang terkandung adalah ini:
+
+Ini baris pertama
+Dan ini yang kedua
+
+tring tidak dapat dibagi, dikalikan, atau dikurangi, tetapi +operator dapat menggunakannya. Itu tidak menambah, tapi menggabungkan — itu merekatkan dua string menjadi satu. Baris berikut akan menghasilkan string "concatenate":
+
+"con"  +  "cat"  +  "e"  +  "nate"
+
+-operator unary
+untuk oprasi matematik yang hanya melibatkan satu buah operand (operand adalah nilai asal yang digunakan dalam porese operasi contoh 4+2 4 dan 2 adalah operand + adalah operator).
+operator unary
++ = membuat nilai positif = +10
+- = membuat nilai negatif = -10
+++ = increment menambahkan nilai 1 = x++
+-- = dicrement mengurangi nilai 1 = x--
+Operator yang menggunakan dua nilai disebut operator biner , sedangkan yang mengambil satu disebut operator unary .
+Operator minus dapat digunakan baik sebagai operator biner maupun sebagai operator unary.
+
+konsol . log ( - ( 10  -  2 ))
+ // ? -8
+
+nilai boolean 
+
+nilai yang hanya memiliki dua outputan yaitu "ya" atau "tidak", "benar" atau "salah"
+contoh
+3 > 4 = tidak/salah
+3 > 2 = iya/benar
+penggunaan string pada type data boolean juga dapat di gunakan.
+contoh
+bumi > cumi = benar
+bumi > air = salah
+dari string dilihat dari karakter pertama.
+b > c = benar
+b > a = salah
+perator lainnya
+>= , <=, ==, != lebih besar sama dengan, kurang dari sama dengan , sama dengan, bukan sama dengan.
+pada boolean hanya ada satu nilai yang tidak sama dengan nilainya sendiri yaitu 
+NaN == NaN salah
+NaNseharusnya menunjukkan hasil dari komputasi yang tidak masuk akal, dan karena itu, tidak sama dengan hasil perhitungan tidak masuk akal lainnya.
+
+-logika
+
+> dan (&&)
+konsol . log ( true  & &  false )
+ // ? false 
+console . log ( true  & &  true )
+ // ? true
+> atau (||)
+konsol . log ( false  | |  true )
+ // ? 
+konsol benar . log ( false  | |  false )
+ // ? false
+konsol . log ( false  | |  true )
+ // ? 
+
+sebaliknya atau bukan di tulis dengan (!)
+!true atau !false.
+
+ternary beroprasi tiga angka sebagai jalan pintas dari "if" statement
+contoh:
+
+konsol . log ( benar  ?  1 : 2 );
+// ? 1 
+konsol . log ( salah  ?  1 : 2 );
+// ? 2
+
+-nilai kosong
+ada 2 yaitu null dan undefined tidak ada nilai atau tidak ada nilai yang bermakna. 2 hal tersebut Banyak operasi dalam bahasa yang tidak menghasilkan nilai yang berarti (Anda akan lihat nanti) menghasilkan undefinedhanya karena harus menghasilkan beberapa nilai.
+
+-automatic type conversion
+java script akan otomatis memaksa perubahan seperti string ke number, null dipaksa sebagai 0, dan sebagainya
+tetapi + ketika "4" + 1 akan menghasilkan 41
+menggunakan operator perbandingan tiga karakter secara defensif untuk mencegah konversi jenis yang tidak terduga seperti "===" "!=="
+
+-Short-circuiting of logical operators
+contoh:
+0 || 1 akan keluar 1
+3 || 2 akan keluar 3
+jadi akan keluar nilai true dan yang paling kiri
+
