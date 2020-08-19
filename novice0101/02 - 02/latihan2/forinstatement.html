@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Percabangan switch/case</title>
+</head>
+<body>
+	
+<script>
+	function dump_props(obj, obj_name) {
+  let result = '';
+  for (let i in obj) {
+    result += obj_name + '.' + i + ' = ' + obj[i] + '<br>';
+  }
+  result += '<hr>';
+  return result;
+}
+
+console.log(dump_props("mobil","motor"));
+</script>
+</body>
+</html>

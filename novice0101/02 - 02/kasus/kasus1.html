@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kasus1</title>
+</head>
+<body>
+<script type="text/javascript">
+	var num1, num2;
+num1 = window.prompt("masukan angka pertama", "0");
+num2 = window.prompt("masukan angka ke dua", "0");
+                                                 
+if(num1 > num2) 
+  { 
+  console.log(num1+ " > "+ num2+ " angka "+ num1+ "lebih besar");
+  document.write(num1+ " > "+ num2+ " angka "+ num1+ "lebih besar");
+  }   
+else
+  if(parseInt(num2, 10) > parseInt(num1, 10)) 
+  {
+  console.log( num1+" < "+ num2+ " angka "+ num2+ "lebih kecil");
+  document.write( num1+" < "+ num2+ " angka "+ num2+ "lebih kecil");
+  }                  
+else
+  {
+   console.log("angka "+ num1+ " dan "+num2+ " sama.");
+   document.write("angka "+ num1+ " dan "+num2+ " sama.");
+  }
+</script>
+</body>
+</html>

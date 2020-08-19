@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kasus3</title>
+</head>
+<body>
+<script type="text/javascript">
+	var x, y, z;
+  
+x = window.prompt("masukan angka pertama", "0");
+y = window.prompt("masukan angka ke dua", "0");
+z = window.prompt("masukan angka ketiga", "0");
+ 
+document.write("angka asal: "+x+", "+y+", "+z+"<br>");
+
+if (x>y && x>z)
+{
+        if (y>z)
+        {
+            console.log(x + ", " + y + ", " +z);
+            document.write("angka urut: "+z + ", " + y + ", " +x);
+        }
+        else
+        {
+            console.log(x + ", " + z + ", " +y);
+            document.write("angka urut: "+y + ", " + z + ", " +x);
+        }
+}
+else if (y>x && y >z)
+{
+        if (x>z)
+        {
+             console.log(z + ", " + x + ", " +y);
+             document.write("angka urut: "+z + ", " + x + ", " +y);
+        }
+        else
+        {
+             console.log(x + ", " + z + ", " +y);
+             document.write("angka urut: "+x + ", " + z + ", " +y);
+        }
+}
+else if (z>x && z>y)
+{
+        if (x>y)
+        {
+            console.log(y + ", " + x + ", " +z);
+            document.write("angka urut: "+y + ", " + x + ", " +z);
+        }
+        else
+        {
+            console.log(x + ", " + y + ", " +z);
+            document.write("angka urut: "+x + ", " + y + ", " +z);
+        }
+}        
+
+</script>
+</body>
+</html>

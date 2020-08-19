@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kasus6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var murid = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+
+var total = 0;
+
+for (var i = 0; i<murid.length;i++){
+  total += murid[i][1];
+  var avg = (total/murid.length);
+}
+console.log("nilai rata-rata: " + avg);
+document.write("nilai rata-rata: "+avg+" <br>");
+
+        if (avg < 60){
+          console.log("Nilai : F");
+          document.write("Nilai : F");      
+          } 
+        else if (avg < 70) {
+                console.log("Nilai : D"); 
+                document.write("Nilai : D");
+                  } 
+        else if (avg < 80) 
+             {
+                console.log("Nilai : C"); 
+                document.write("Nilai : C");
+        } else if (avg < 90) {
+                console.log("Nilai : B"); 
+                document.write("Nilai : B");
+        } else if (avg < 100) {
+                console.log("Nilai : A"); 
+                document.write("Nilai : A");
+}
+
+	</script>
+</body>
+</html>
