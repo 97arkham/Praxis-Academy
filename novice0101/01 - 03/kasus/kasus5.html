@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kasus 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function celsiusToFahrenheit(c){
+			if (c === 0){
+				console.log(32);
+			}else if(c > 0){
+				var hasil = (c*1.8)+32;
+				console.log(hasil)
+			}else if(c < 0){
+				 hasil = (c*1.8)-32;
+				console.log(hasil)
+			}else{
+				console.log("NaN");
+			}
+		}
+
+		function fahrenheitToCelsius(f){
+			if (f === 32){
+				console.log(0);
+			}else if(f > 32){
+				var hasil2 = (f-32)*0.56;
+				console.log(hasil2)
+			}else if(f < 32){
+				 hasil2 = (c+32)*0.56;
+				console.log(hasil2)
+			}else{
+				console.log("NaN");
+			}
+		}
+
+
+		celsiusToFahrenheit(2);
+		fahrenheitToCelsius(parseFloat(32.6));
+	</script>
+</body>
+</html>

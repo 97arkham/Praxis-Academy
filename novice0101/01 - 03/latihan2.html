@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 2</title>
+</head>
+<body>
+<p>ini adalah hasil latihan 2 function</p>
+<script type="text/javascript">
+	var p = 8;
+	function myFunc(){
+		var p = 9;
+		function decl(){
+			console.log(p);
+		}
+		var expr = function(){
+			console.log(p);
+		}
+		var cons = new Function('\tconsole.log(p);');
+
+		decl();
+		expr();
+		cons();
+	}
+	myFunc();
+</script>
+</body>
+</html>

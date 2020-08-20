@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 7</title>
+</head>
+<body>
+	<p>latihan 7</p>
+	<!-- Hoisting adalah perilaku memindahkan tahap deklarasi ke atas cakupan, terlepas dari apakah variabel dideklarasikan dan dijalankan dalam satu langkah. Ini selalu menjadi perilaku aneh dalam JavaScript yang harus kami terima dan atasi. Untungnya, dengan diperkenalkannya dua jenis variabel baru di ES2015, perilaku ini tidak terlalu menjadi masalah. -->
+
+	<!-- Saat menulis ES2015, praktik terbaiknya adalah selalu menggunakan const. Jika Anda membutuhkan variabel untuk diperbarui, gunakan let. Hampir tidak ada keadaan di mana menggunakan varadalah pilihan yang lebih baik, dan mengangkat seharusnya tidak menjadi masalah. -->
+
+	<script type="text/javascript">
+		console.log("======var=====");
+		function exampleScope() {
+		  console.log(fooo); // => undefined
+		  var fooo = "Hello world";
+		  console.log(fooo); // => “Hello, world!”
+		  console.log("This sentence will be logged"); // => “This sentence will be logged”
+		}
+		console.log("======let=====");
+		function exampleScopelet() {
+  console.log(foooo); // => ReferenceError: foo is not defined [Stop script execution]
+  let foooo = "Hello, world!"; 
+  console.log(foooo); 
+  console.log("This will never be logged");
+}
+
+console.log("======const=====");
+function exampleScopeconst() {
+		  console.log(foo); // => undefined
+		  var foo = "Hello, world!";
+		  console.log(foo); // => “Hello, world!”
+		  console.log("This sentence will be logged"); // => “This sentence will be logged”
+		}
+	</script>
+</body>
+</html>

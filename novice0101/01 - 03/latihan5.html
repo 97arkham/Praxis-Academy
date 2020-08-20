@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 5</title>
+</head>
+<body>
+	<p>latihan 5 Fungsi bertingkat</p>
+	<!-- makeCountermembuat fungsi "counter" yang mengembalikan angka berikutnya pada setiap pemanggilan -->
+	<script type="text/javascript">
+		function makeCounter(){
+			let count = 0;
+
+			return function(){
+				return count++;
+			};
+		}
+		let counter =makeCounter();
+
+		alert( counter());
+		alert( counter());
+		alert( counter());
+		alert( counter());
+	</script>
+</body>
+</html>
