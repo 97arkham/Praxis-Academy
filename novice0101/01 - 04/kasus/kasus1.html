@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coba</title>
+</head>
+<body>
+	<h1>CEK PLAT NOMOR</h1>
+	<p>cth: AD 1234 DDD</p>
+	<p>Gunakan Huruf Kapital</p>
+	<hr>
+	<input type="text" id="myText" >
+	<button onclick="myFunction()">cek</button>
+
+<p id="demo"></p>
+	<script type="text/javascript">
+		//filter nomor telpon
+		function myFunction(){
+		var x = document.getElementById("myText").value;
+		var str = "BL\nBB\nBK\nBA\nBM\nBP\nBG\nBN\nBE\nBD\nBH\nA\nB\nD\nE\nF\nT\nZ\nG\nH\nK\nR\nAA\nAB\nAD\nL\nM\nN\nP\nS\nW\nAE\nAG\nDK\nDR\nEA\nDH\nEB\nED\nKB\nDA\nKH\nKT\nDB\nDL\nDM\nDN\nDT\nDD\nDC\nDE\nDG\nDS";
+
+		var ptt1 =/^[A-Z]{1,2}\s\d{1,4}\s[a-z]{1,3}$/gi ;
+		var result = x.match(ptt1);
+		var value = ((result[0]).substring(0,2)); 
+		var a = str.indexOf(value) > -1;
+
+		if (a==true){
+			console.log("Plat Dari Indonesia");
+			document.getElementById("demo").innerHTML = "Plat Dari Indonesia";
+		}else{
+			console.log("Bukan Plat Indonesia");
+			document.getElementById("demo").innerHTML = "Bukan Plat Indonesia";
+		}
+	}
+	</script>
+</body>
+</html>

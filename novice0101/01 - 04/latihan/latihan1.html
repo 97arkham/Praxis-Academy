@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log("=======Hexadecimal escape sequences======");
+		var b = '\xA9';
+		console.log(b);
+		console.log("======Unicode escape sequences======");
+		var a = '\u00A9';
+		console.log(a);
+		console.log("====== Unicode code point escapes ======");
+		var c ='\u{2F804}';
+		var d ='\uD87E\uDC04';
+		console.log(c);
+		console.log(d);
+		console.log("=====String Object======");
+		const foo = new String('foo');
+		console.log(foo);
+		typeof foo; //returns 'object
+		console.log(foo[2]);//array
+		console.log("=====Const Object=====");
+		const angka = '2+2';
+		const angka2 = new String('2+2');
+		eval(angka);//eval merubah string ke number
+		eval(angka2);//eval() merubah string ke number
+		console.log("======Mencoba merubah String di Array=====");
+		const hello = 'Hello, World!';
+		const hellolength = hello.lenght;
+		hello[0]='j';
+		console.log(hello[0]); //tidak dapat di rubah
+		console.log("====== multi line ======");
+		console.log("===== versi 1 petik 1 dan garis miring n =====");
+		console.log('baris text string 1 \n\ text string baris 2');
+		console.log("===== versi 1 petik tidur dan enter");
+		console.log(`baris text string 1  
+			text string baris 2`);
+
+		console.log("===== Embeded expressions=====");
+		console.log("===ver 1===");
+		const lima = 5;
+		const sepuluh = 10;
+		console.log('lima belas adalah '+(lima + sepuluh) + ' bukan '+(2*(lima+sepuluh))+'.');
+		console.log("=== ver 2 === dengan $ dan petik tidur");
+		console.log(`lima belas adalah ${lima + sepuluh} dan bukan ${2*(lima+sepuluh)}.`);
+		console.log("=======date and time formating=====");
+		
+		const msPerDay = 24 * 60 * 60 * 1000;
+
+// July 17, 2014 00:00:00 UTC.
+const july172014 = new Date(msPerDay * (44 * 365 + 11 + 197));
+
+const options = { year: '2-digit', month: '2-digit', day: '2-digit',
+hour: '2-digit', minute: '2-digit', timeZoneName: 'short' };
+const americanDateTime = new Intl.DateTimeFormat('en-US', options).format;
+
+console.log(americanDateTime(july172014)); // 07/16/14, 5:00 PM PDT
+console.log("=======Number formatting=====");
+const gasPrice = new Intl.NumberFormat('en-US',
+                        { style: 'currency', currency: 'USD',
+                          minimumFractionDigits: 3 });
+ 
+console.log(gasPrice.format(5.259)); // $5.259
+
+const hanDecimalRMBInChina = new Intl.NumberFormat('zh-CN-u-nu-hanidec',
+                        { style: 'currency', currency: 'CNY' });
+ 
+console.log(hanDecimalRMBInChina.format(1314.25)); 
+console.log("=======collation=====");
+const names = ['Hochberg', 'Hönigswald', 'Holzman'];
+ 
+const germanPhonebook = new Intl.Collator('de-DE-u-co-phonebk');
+ 
+// as if sorting ["Hochberg", "Hoenigswald", "Holzman"]:
+console.log(names.sort(germanPhonebook.compare).join(', '));
+// logs "Hochberg, Hönigswald, Holzman"
+const germanDictionary = new Intl.Collator('de-DE-u-co-dict');
+ 
+// as if sorting ["Hochberg", "Honigswald", "Holzman"]:
+console.log(names.sort(germanDictionary.compare).join(', '));
+// logs "Hochberg, Holzman, Hönigswald"
+</script>
+</body>
+</html>

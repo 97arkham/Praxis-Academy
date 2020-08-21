@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>coba</title>
+</head>
+<body>
+  <h1>EMAIL</h1>
+  <hr>
+  <input type="text" id="myText" >
+  <button onclick="myFunction()">Klik</button>
+
+<p id="demo"></p>
+  <script type="text/javascript">
+    //filter nomor telpon
+    function myFunction(){
+    var x = document.getElementById("myText").value;
+
+    var ptt1 =/^([a-z0-9_\.-]+)@+@([\da-z\.-]+)\.([a-z\.]{2,6})$/gi;
+    var name = /^([a-z0-9_\.-]+)/gi;
+    var domain =  /([\da-z\.-]+)\.([a-z\.]{2,6})$/gi;
+    
+
+    ptt1 = x.match(ptt1);
+    name = x.match(name);
+    domain = x.match(domain);
+    
+    if(ptt1){
+      alert(`halo ${name} domain ${domain}`);
+    }else{
+      alert("gagal");
+    }
+  }
+  </script>
+</body>
+</html>

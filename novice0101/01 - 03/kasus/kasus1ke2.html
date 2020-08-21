@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kasus 1 versi 2</title>
+</head>
+<body>
+	<h1>Data Warga</h1>
+	<hr>
+	<input type="text" id="myText" >
+	<button onclick="celsiusToFahrenheit()">Try it</button>
+	<input type="text" id="myText2" >
+	<button onclick="fahrenheitToCelsius()">Try it</button>
+
+<p id="demo"></p>
+
+
+<script>
+function celsiusToFahrenheit(){
+var x = document.getElementById("myText").value;
+			 if(parseFloat(x) > 0){
+				var hasil = (parseFloat(x)*1.8)+32;
+				document.getElementById("demo").innerHTML = hasil;
+			}else {
+				 hasil = (parseFloat(x)*1.8)-32;
+				document.getElementById("demo").innerHTML = hasil;
+			}
+		}
+
+
+		function fahrenheitToCelsius(){
+		var x = document.getElementById("myText2").value;
+			
+			if(parseFloat(x) > 32){
+				var hasil2 = (parseFloat(x)-32)*0.56;
+				document.getElementById("demo").innerHTML = hasil2;
+			}else {
+				 hasil2 = (parseFloat(x)+32)*0.56;
+				document.getElementById("demo").innerHTML = hasil2;
+			}
+		}
+</script>
+
+	
+</body>
+</html>
