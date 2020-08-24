@@ -9,7 +9,6 @@
 	<input type="text" id="myText" >
 	<button onclick="myFunction()">Klik</button>
 
-<p id="demo"></p>
 	<script type="text/javascript">
 		//filter nomor telpon
 		function myFunction(){
@@ -17,11 +16,11 @@
 		var ptt1 =/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 		var result = x.match(ptt1);
 		if(result){
-			alert("hay " + result[1]+" domain @"+result[2]+"."+result[3]);
+			alert("hay " + result[1]+" domain "+result[2]+"."+result[3]);
 		}else{
 			alert("Email Salah");
 		}
-		console.log("hay " + result[1]+" domain @"+result[2]+"."+result[3]);
+		console.log("hay " + result[1]+" domain "+result[2]+"."+result[3]);
 		console.log(result);
 	}
 	</script>

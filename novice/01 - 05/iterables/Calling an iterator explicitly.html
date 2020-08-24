@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str = "hallo";
+		let iterator = str[Symbol.iterator]();
+		while(true){
+			let result = iterator.next();
+			if(result.done) break;
+			alert(result.value);
+		}
+	</script>
+</body>
+</html>

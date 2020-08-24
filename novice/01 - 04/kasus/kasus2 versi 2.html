@@ -15,7 +15,7 @@
     function myFunction(){
     var x = document.getElementById("myText").value;
 
-    var ptt1 =/^([a-z0-9_\.-]+)@+@([\da-z\.-]+)\.([a-z\.]{2,6})$/gi;
+    var ptt1 =/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/gi;
     var name = /^([a-z0-9_\.-]+)/gi;
     var domain =  /([\da-z\.-]+)\.([a-z\.]{2,6})$/gi;
     
@@ -25,7 +25,7 @@
     domain = x.match(domain);
     
     if(ptt1){
-      alert(`halo ${name} domain ${domain}`);
+      alert(`hallo ${name} domain ${domain}`);
     }else{
       alert("gagal");
     }

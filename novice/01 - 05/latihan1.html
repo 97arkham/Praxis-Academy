@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task 1 Sum The Properties</title>
+</head>
+<body>
+	<script type="text/javascript">
+			let salaries = {
+			"Jhon":100,
+			"Pate":300,
+			"Mary":250
+		};
+	function sumSalaries(salaries){
+		//loop
+		let sum = 0;
+		for(let salary of Object.values(salaries)){
+			sum+=salary;
+		}
+		return sum;
+	}
+
+		alert(sumSalaries(salaries));
+		
+	</script>
+</body>
+</html>

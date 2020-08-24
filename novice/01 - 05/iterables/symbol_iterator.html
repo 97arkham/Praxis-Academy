@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>symbol Iterator</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let range = {
+			from: 1,
+			to: 5
+		};
+
+		//memanggil for..of
+		range[Symbol.iterator] = function(){
+			//memanggil iterator object;
+			//meminta nilai berikutnya
+			return{
+				current: this.from,
+				last: this.to,
+				next(){
+					if(this.current <= this.last){
+						return{done: false, value: this.current++};
+					}else{
+						return{done:true};
+					}
+				}
+			};
+		};
+
+		//menjalaknkan pekerjaan
+		for(let num of range){
+			alert(num);
+		}
+	</script>
+</body>
+</html>
