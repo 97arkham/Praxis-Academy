@@ -1,0 +1,33 @@
+Folder 02 - 01 
+Hari 1: Paradigma Pemrograman di JavaScript: OOP (1)*
+Oleh : Khairun Arkham
+Tujuan :
+	1.Siswa mengetahui berbagai paradigma pemrograman yang didukung oleh JavaScript.
+	2.Siswa memahami dan mampu menggunakan fitur OOP menggunakan prototype-based
+Pembahasan :
+	1.Paradigma pemrograman
+	2.Memahami OOP
+	3.OOP di JavaScript: Prototype-based
+	4.Prototype-based OOP di JavaScript
+
+praxis-academy
+|
+|_kemampuan-dasar
+|
+|_novice
+  |_01-01
+  |
+  |_01-02
+  |		
+  |_01-03
+  |
+  |_01-04
+  |
+  |_01-05
+  |
+  |_02-01
+    |_kasus
+	|
+    |_latihan
+		    |_latihan 1
+		    |_latihan 2

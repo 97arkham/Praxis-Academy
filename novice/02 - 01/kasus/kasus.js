@@ -33,24 +33,14 @@ function processData(input) {
     console.log(`'${input[2]}' is ${c.isAlpha(input[2])? `a letter ${c.isConsonant(input[2])? `and`: `but not`} a consonant.`: "not a letter."} `);
     
 } 
-var a = new Alpha();
-// console.log(a.isAlpha("A"));
-if(true){
-    console.log("A is "+ a.isAlpha("A")+" ? : not a letter" );
-}else{
-    console.log("gagal");
-}
-var b = new Vowel();
-// console.log(b.isVowel("e"));
-if(true){
-    console.log("e is "+ a.isVowel("e")+" ? : not a letter"+ a.isVowel("e") + );
-}else{
-    console.log("gagal");
-}
-var c = new Consonant();
-// console.log(c.isConsonant("r"));
-if(true){
-    console.log("r");
-}else{
-    console.log("gagal");
-}
+
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+_input = "";
+process.stdin.on("data", function (input) {
+    _input += input;
+});
+
+process.stdin.on("end", function () {
+   processData(_input.split(' '));
+});
