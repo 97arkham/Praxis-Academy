@@ -26,8 +26,13 @@ praxis-academy
   |_01-05
   |
   |_02-01
+    |_README.md
     |_kasus
-	|
+	   |_kasus.js
+     |_kasus1,2.js
     |_latihan
 		    |_latihan 1
+        ` |_ObjectAssign.js
+          |_Objectcrate.js
 		    |_latihan 2
+          |_latihan2.js

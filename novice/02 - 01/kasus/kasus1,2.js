@@ -43,14 +43,14 @@ if(true){
 var b = new Vowel();
 // console.log(b.isVowel("e"));
 if(true){
-    console.log("e is "+ a.isVowel("e")+" ? : not a letter"+ a.isVowel("e") + );
+    console.log("e is "+ b.isVowel("e")+" ? : not a letter"+ b.isVowel("e"));
 }else{
     console.log("gagal");
 }
 var c = new Consonant();
 // console.log(c.isConsonant("r"));
 if(true){
-    console.log("r");
+    console.log("r is "+c.isConsonant("r")+" a letter " + c.isConsonant("r")+ " and: but not a consonant: not a letter.");
 }else{
     console.log("gagal");
 }
