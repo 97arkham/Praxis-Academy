@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kasus</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+	<script>
+        
+		// const axios = require('axios');
+
+async function makeRequest() {
+
+    const config = {
+        method: 'get',
+        url: 'https://jsonplaceholder.typicode.com/users'
+    }
+
+    let res = await axios(config)
+
+    console.log(res.data);
+}
+
+makeRequest();
+</script>
+</body>
+</html>
