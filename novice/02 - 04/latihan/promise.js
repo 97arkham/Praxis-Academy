@@ -8,7 +8,7 @@ const janji2 = new Promise((resolve,reject)=>{
         }, 2000);
     }else{
             setTimeout(()=>{
-                resolve('tidak di tepati anjingg!!!')
+                reject('tidak di tepati anjingg!!!')
             }, 2000);
         }
     });
