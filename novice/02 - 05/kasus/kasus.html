@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Timeout</title>
+    </head>
+<body>
+	
+<script>
+   class MultiplicatorUnitFailure extends Error {}
+
+function primitiveMultiply(a, b) {
+  if (Math.random() < 0.2) {
+    return a * b;
+  } else {
+    throw new MultiplicatorUnitFailure("Klunk");
+  }
+}
+
+function reliableMultiply(a, b) {
+    for(;;){
+    try{
+            console.log("Loh Kok Keluar: ", primitiveMultiply(a,b));
+       break;
+  }
+  catch(e){
+  	console.log("Nahh "+ e);
+  	
+  }
+}  
+}
+
+console.log(reliableMultiply(8, 8));
+// → 64
+
+</script>
+
+    
+</body>
+</html>

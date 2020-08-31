@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Try Catch</title>
+    </head>
+<body>
+	<input type="button" value="View massage" onclick="massage()">
+<script>
+    var txt="";
+    function massage()
+    {
+        try
+        {
+            adddlert("welcome guest!");
+        }
+        catch(err)
+        {
+            txt="There was an error on this page. \n\n";
+            txt+="Error description: "+err.massage + "\n\n";
+            txt+="Click OK to continue.\n\n";
+            alert(txt);
+        }
+    }
+</script>
+
+    
+</body>
+</html>

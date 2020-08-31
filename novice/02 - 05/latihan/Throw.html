@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Throw</title>
+    </head>
+<body>
+	
+<script>
+   function myFunction(){
+       var y = document.getElementById("mess");
+       y.innerHTML="";
+       try{
+           var x = document.getElementById("demo").value;
+           if(x=="") throw "empity";
+           if(isNaN(x)) throw "not a number";
+           if (x>10) throw "too high";
+           if(x<5) throw "too low";
+    }
+    catch(err)  
+    {
+        y.innerHTML = "ERROR: "+err+".";
+    }
+   }
+</script>
+<h1>My Throw Java Script</h1>
+<p>masukan angka antara 5 hingga 10</p>
+<input type="text" id="demo">
+<button type="button" onclick="myFunction()">Coba Input</button>
+<p id="mess"></p>
+    
+</body>
+</html>

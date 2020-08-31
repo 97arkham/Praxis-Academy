@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Timeout</title>
+    </head>
+<body>
+	
+<script>
+   const person ={
+       name : "irun",
+       age : 17
+   };
+   
+   function sleep(s){
+       if(s.age<21){
+           throw new Error('umurmu kurang dari 21');
+       }
+       console.log(`${s.name} sleep`);
+   }
+
+   try{
+       sleep(person);
+   } catch(err){
+       console.log('Something went wrong');
+       console.error(err);
+       alert('Something went wrong');
+       alert(err);
+   }
+
+</script>
+
+    
+</body>
+</html>
