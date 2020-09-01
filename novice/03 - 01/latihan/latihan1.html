@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan 1</title>
+</head>
+<body>
+  <h1>Mountains</h1>
+  <table id="isi">
+  <tr>
+    <th>name</th>
+    <th>height</th>
+    <th>place</th>
+  </tr>
+</table>
+<div id="mountains"></div>
+
+<script>
+  const MOUNTAINS = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+  ];
+
+  let isi = document.getElementById('isi');
+  MOUNTAINS.forEach(data =>{
+    isi.innerHTML +=
+    `<tr>
+        <td>${data.name}</td>
+        <td>${data.height}</td>
+        <td>${data.place}</td>
+    </tr>`;
+  });
+  
+</script>
+</body>
+</html>
+
+
