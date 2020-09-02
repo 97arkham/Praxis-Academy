@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cobalagi</title>
+</head>
+<style type="text/css">
+	.kotak{
+		width: 900px;
+		height: 900px;
+		/*text-align: center;*/
+		/*border: 1px solid black;*/
+		/*margin: 2px;*/
+		/*float: left;*/
+		border-radius: 500px;
+	}
+</style>
+<body>
+	<script type="text/javascript">
+		window.onload = ()=>{
+		
+			let box = document.createElement("div");
+			box.setAttribute("class","kotak");
+			document.body.appendChild(box);
+		}	
+		
+		setInterval(() => {
+            let random = document.querySelectorAll(".kotak");
+            let letters = "0123456789ABCDEF";
+            let getColor = "#";
+            // let getColor1 = "#";
+
+            (function randomColor() {
+                for (let i = 0; i < 6; i++) {
+                    getColor += letters[Math.floor(Math.random() * 16)];
+                }
+                return getColor;
+            })();
+
+            // (function randomColor1() {
+            //     for (let i = 0; i < 6; i++) {
+            //         getColor1 += letters[Math.floor(Math.random() * 16)]
+            //     }
+            //     return getColor1;
+            // })();
+
+            for (let i = 0; i < random.length; i++) {
+                if (i % 2 === 0) {
+                    random[i].style.backgroundColor = getColor;
+                // } else {
+                    // random[i].style.backgroundColor = getColor1;
+                }
+            }
+        }, 1000);
+	</script>
+</body>
+</html>
