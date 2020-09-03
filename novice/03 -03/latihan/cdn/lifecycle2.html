@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Vue 011</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        new Vue ({    
+            el: '#app',
+            template: `
+            <div>
+            <div class="jumbotron text-center">
+            <h1>Bootstrap 4</h1>
+            <p>Latihan012 - Lifecycle Hooks Pada Vue.js</p>
+            </div>
+            <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <div id="belajar-hook">{{ pesan }}</div>
+            <br/>
+            
+            <button 
+            type="button" 
+            class="btn btn-primary"
+            @click="renderVirtualDom"
+            >re-Render Virtual DOM</button>
+            <br/>
+
+            <div v-if="rendered"></div>
+
+            <br/>
+            </div>
+            <br/>
+            </div>
+            </div>
+            </div>
+            </div>
+            `,
+            data () {
+                return {
+                    pesan: 'Halo Vue',
+                    rendered: 0
+                }
+            },
+            methods: {
+                renderVirtualDom() {
+                  this.rendered = 1
+              }
+          },
+          created() {
+            console.log('log dari created():');
+            console.log('pesan: ' + this.pesan);
+            console.log(document.getElementById('belajar-hook'));
+            console.log('');
+        },
+        mounted() {
+            console.log('log dari mounted():');
+            console.log('pesan: ' + this.pesan);
+            console.log(document.getElementById('belajar-hook'));
+            console.log('');
+            this.pesan = 'Semangat Pagi Dunia';
+        },
+        updated() {
+            console.log('log dari updated():');
+            console.log('pesan: ' + this.pesan);
+            console.log(document.getElementById('belajar-hook'));
+            console.log('');
+        },
+    });
+</script>
+</body>
+</html>
