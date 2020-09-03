@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-for</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+</head>
+<body>
+	<div id="app4">
+		<span v-once>Ini tidak akan pernah berubah: {{ msg }}</span>
+	</div>
+	<script type="text/javascript">
+		var app5 = new Vue({
+	el:'#app4',
+	data:{
+		msg: 'Sumpah!'
+	}
+})
+	</script>
+</body>
+</html>
+

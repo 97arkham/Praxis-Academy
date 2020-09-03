@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perkenalan VUE JS</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		{{kenal}}
+		{{pesan}}
+		
+	</div>
+	<!-- v-bind:title -->
+	<div id="app2">
+		<span v-bind:title="pesan2">
+			Arahkan mouse anda kesini dan tunggu dalam beberapa detik untuk melihat judul pesan yang dinamis
+		</span>
+	</div>
+	<!-- Kondisi dan Perulangan -->
+	<div id="app3">
+		<span v-if="terlihat">
+			Saya bisa dilihat
+		</span>
+	</div>
+	<!-- kondisi dan perulanagn v-for -->
+	<!-- <div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.teks }}
+    </li>
+  </ol>
+</div>
+ -->
+
+
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				kenal:'perkenalan',
+				pesan: 'Hai, ini Vue!'
+			}
+		})
+
+
+		// v-bind: title
+		var app2 = new Vue2({
+			el: '#app2',
+			data:{
+				pesan2: 'Anda memmaut halaman ini pada jam ' + new Date().tolocaleString()
+			}
+		})
+
+		// kondisi dan perulangan
+		var app3 = new Vue3({
+			el: '#app3',
+			data:{
+				terlihat:true
+			}
+		})
+
+		// perulanagn dan kondisi v-for
+		// var app4 = new Vue4({
+		// 	el: '#app-4',
+		// 	data: {
+		// 		todos: [
+		// 		{ teks: 'Belajar JavaScript' },
+		// 		{ teks: 'Belajar Vue' },
+		// 		{ teks: 'Buat proyek keren' }
+		// 		]
+		// 	}
+		// })
+	</script>
+</body>
+</html>
